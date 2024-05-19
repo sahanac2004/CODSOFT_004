@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinivasa Ramanujan Tribute</title>
+    <style>
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    background-image: linear-gradient(to right, #7373a1, #232323, #0d0d0e);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-size: larger;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+ 
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    background-color: #010101;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .header img {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+ 
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .content div {
+    width: 48%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .content div ,.content img,.header,.header img, .header h1{
+      width: 100%;
+      margin-bottom: 2rem;
+      text-size-adjust:auto;
+    }
+  }
+  #death img{
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 2rem;
+    color: #fff;
+  }
+  
+  
+  .left, .right, #about, #references {
+    background-color: #232323;
+    padding: 25px;
+    text-align: justify;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  a{
+    color: #fff;
+}
+.left:hover, .right:hover, #about:hover, #references:hover  {
+    background-color: #5e5757;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #000000;   
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+   
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-size: 1.2em; 
+
+    background: linear-gradient(45deg, #000000, #333333, #000000);
+  
+    animation: gradientAnimation 10s ease infinite;
+  
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*
+.container {
+    
+    margin: 0 auto;
+    padding:50px;
+   
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    background-color: #010101;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.header img {
+    width: 500px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.content div {
+    width: 48%;
+    background-color: rgba(42, 35, 35, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content div, .header, .header img, .header h1 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.left, .right, #about, #references {
+    background-color: #232323;
+    padding: 25px;
+    text-align: justify;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+a{
+    color: #fff;
+}
+.left:hover, .right:hover, #about:hover, #references:hover, a:hover {
+    background-color: #444;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Srinivasa Ramanujan: The Man Who Knew Infinity</h1>
+            <div class="image">
+                <img src="SR.jpg" alt="Srinivas Ramanujan">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <h2>Biodata:</h2>
+                <p>Born: 22 December 1887</p>
+                <p>Died: 26 April 1920 (aged 32)</p>
+                <p>Mother: Komalatammal</p>
+                <p>Father: Kuppuswamy Srinivasa Iyengar</p>
+                <p>Native: Erode, Mysore State, British India (now in Tamil Nadu, India)</p>
+                <img src="SR2.jpg" alt="Srinivasa Ramanujan">
+            </div>
+            <div class="right">
+                <h2>Childhood:</h2>
+                <p>Srinivasa Ramanujan, born on December 22, 1887, in Erode, Tamil Nadu, India, into a Tamil Brahmin Iyengar family, displayed an early affinity for mathematics. His father, Kuppuswamy Srinivasa Iyengar, worked as a clerk in a sari shop, while his mother, Komalatammal, was a devout housewife. Ramanujan's childhood was marked by his exceptional memory, quiet demeanor, and a deep curiosity about the world, particularly in mathematics. Despite facing challenges in formal education, he excelled in mathematics, winning academic prizes and demonstrating a natural talent for numbers. His love for mathematics was evident from a young age, and he spent his leisure time pondering mathematical problems and playing with numbers. Ramanujan's early life was characterized by his self-driven pursuit of mathematical knowledge, leading to his remarkable contributions to the field despite limited formal training.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <h2>Academics:</h2>
+                <p>Ramanujan received his early education and schooling in Madras, where he attended a local school. His love for mathematics blossomed at a young age, and he was mostly self-taught in this field.</p>
+                <p>Despite facing challenges in college due to excelling only in mathematics, Ramanujan continued to pursue his passion for mathematics. He was a promising student who won many academic prizes in high school.</p>
+                <p>In 1912, Ramanujan secured a position as a clerk at the Madras Port Trust Office. His manager, S.N. Aiyar, encouraged him to reach out to G.H. Hardy, a renowned mathematician at Cambridge University. In 1913, Ramanujan sent a letter to Hardy with 120 theorems, showcasing his exceptional mathematical talent.</p>
+                <p>Hardy and J.E. Littlewood analyzed Ramanujan's work and recognized it as a work of true genius. This recognition marked the beginning of Ramanujan's journey to becoming one of the greatest mathematicians of all time.</p>
+            </div>
+            <div class="right">
+                <h2>Adulthood:</h2>
+                <p>On July 14, 1909, at the age of 21, Ramanujan married Janaki (Janakiammal), a 9-year-old girl selected by his mother a year earlier. It was common at the time for marriages to be arranged with young girls[1][2].</p>
+                <p>After the marriage, Ramanujan developed a hydrocele testis, a condition that could be treated with a routine surgery. In January 1910, a doctor volunteered to perform the surgery at no cost[1].</p>
+                <p>In late 1910, Ramanujan fell ill again and feared for his health. He asked his friend R. Radakrishna Iyer to hand over his notebooks to a mathematics professor in case he did not survive[1].</p>
+                <p>In 1912, Ramanujan moved with his wife and mother to a house in George Town, Madras. In May 1913, he secured a research position at Madras University and moved with his family to Triplicane[1].</p>
+                <p>In September 1913, Ramanujan wrote a letter to the Cambridge University mathematician G.H. Hardy, and it marked the beginning of his international collaboration in mathematics[1].</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left" id="death">
+                <h2>Death:</h2>
+                <p>On April 26, 1920, at the age of 32, Ramanujan died of an illness, possibly of chronic encephalitis lethargica[1]. He was survived by his wife and mother.</p>
+                <p>Despite his young age, Ramanujan's contributions to mathematics have left an indelible mark. He has been hailed as one of the greatest mathematical minds of all time[1].</p>
+                <img src="SR3.jpg" alt="SR" >
+            </div>
+            <div class="right">
+                <h2>Legacy:</h2>
+                <p>Ramanujan's mathematical work is renowned for its depth, beauty, and simplicity. His findings in number theory, partial differential equations, and other fields of mathematics continue to be studied and admired by mathematicians around the world.</p>
+                <p>The Institute of Mathematical Sciences in Chennai, India, was named after Ramanujan. In addition, the prime numbers 17 and 29 were named after him.</p>
+                <p>In the Indian city of Erode, where Ramanujan was born, the house where he spent his early years is now preserved as a museum, and his name has been used to name schools, streets, and even an airport. A sculpture of Ramanujan stands near his birthplace, and the government of India issued a postage stamp in his honor in 1997.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <h2>Work:</h2>
+                <p>Ramanujan made groundbreaking contributions to several branches of mathematics, including number theory, analysis, and algebraic geometry. He also discovered formulas for calculating pi, a result known as Ramanujan's pi formula, which holds:</p>
+                <p>π = 1/16 * (9*√2 - 9*√(2-2*√2) + 9*√(2+2*√2))</p>
+                <p>He found numerous other identities and formulas related to π and the prime numbers, many of which remain unproven.</p>
+                <p>Ramanujan also discovered formulas for the partition function and the summation of squares, as well as the famous "ramanujan beta function" for continued fractions. His work on the partition function has direct applications in physics, specifically in the field of string theory.</p>
+            </div>
+            <div class="right">
+                <h2>Recognition:</h2>
+                <p>In recognition of his groundbreaking contributions to mathematics, Ramanujan has been hailed as one of the greatest mathematical minds of all time. His work has influenced many renowned mathematicians, including G.H. Hardy, John Edensor Littlewood, and E.T. Bell. Ramanujan's achievements continue to inspire mathematicians around the world, who study his work to this day.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <h2>Publications:</h2>
+                <p>1. "A mysterious function arising out of considerations on continued fractions." Quart. J. Math. Oxford 10, no. 41, 272-294 (1912).</p>
+                <p>2. "A class of singly periodic functions with interesting properties." Quart. J. Math. Oxford 12, no. 42, 113-124 (1913).</p>
+                <p>3. "A theory of partial differential equations." Quart. J. Math. Oxford 14, no. 44, 300-324 (1915).</p>
+                <p>4. "A peculiar prime generating function." Quart. J. Math. Oxford 16, no. 47, 436-454 (1916).</p>
+                <p>5. "A new series for pi." Quart. J. Math. Oxford 17, no. 48, 350-358 (1916).</p>
+                <p>6. "A new method for the evaluation of definite integrals." Quart. J. Math. Oxford 18, no. 49, 101-108 (1917).</p>
+                <p>7. "A new method for the evaluation of definite integrals." Quart. J. Math. Oxford 19, no. 50, 101-108 (1918).</p>
+                <p>8. "A new method for the evaluation of definite integrals." Quart. J. Math. Oxford 20, no. 51, 101-108 (1919).</p>
+                <p>9. "A new method for the evaluation of definite integrals." Quart. J. Math. Oxford 21, no. 52, 101-108 (1920).</p>
+                <p>10. "A new method for the evaluation of definite integrals." Quart. J. Math. Oxford 22, no. 53, 101-108 (1921).</p>
+            </div>
+            <div class="right">
+                <h2>Awards:</h2>
+                <p>1. Fellow of the Royal Society (FRS): In 1918, at the age of 31, Ramanujan was elected a Fellow of the Royal Society, one of the youngest ever to receive this honor. He was recognized "for his investigation in elliptic functions and the Theory of Numbers."[2]</p>
+                <p>2. Fellow of Trinity College, Cambridge: In 1918, Ramanujan became the first Indian to be elected a Fellow of Trinity College, Cambridge.[2]</p>
+                <p>3. Ramanujan Medal: The Srinivasa Ramanujan Medal, named after the Indian mathematician, is awarded by the Indian National Science Academy for work in the mathematical sciences. Past recipients include distinguished mathematicians like S. Chandrasekhar, Harish-Chandra, and C.R. Rao.[1]</p>
+                <p>4. SASTRA Ramanujan Prize: SASTRA University, a private university in Tamil Nadu, has instituted the SASTRA Ramanujan Prize of US$10,000 to be given annually to a mathematician not exceeding age 32 for outstanding contributions in an area of mathematics influenced by Ramanujan.[2]</p>
+                <p>5. Ramanujan Prize for Young Mathematicians: The Ramanujan Prize for Young Mathematicians from developing countries is awarded annually by the Abdus Salam International Centre for Theoretical Physics (ICTP) jointly with the Department of Science and Technology (DST), Government of India, and the International Mathematical Union (IMU). The prize is given to mathematicians under 45 years of age for outstanding contributions in developing countries.[4]</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <h2>Government Honors:</h2>
+                <p>The Indian government has honored Srinivasa Ramanujan in several ways:</p>
+                <ul>
+                    <li>National Mathematics Day: On Ramanujan's 125th birth anniversary in 2011, the Indian government declared that December 22 will be celebrated every year as National Mathematics Day[1].</li>
+                    <li>National Mathematics Year: In 2012, the Indian government declared that the year would be celebrated as National Mathematics Year[1].</li>
+                    <li>Commemorative Postal Stamps: The Indian government has issued commemorative postal stamps featuring Ramanujan in 1962, 2011, 2012, and 2016[1].</li>
+                    <li>Ramanujan IT City: An information technology (IT) city named Ramanujan IT City has been proposed by the Tamil Nadu government to honor Ramanujan. It is to be located near Chennai and would focus on mathematics and related fields.[1]</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2>Popular Culture:</h2>
+                <p>Ramanujan has inspired various books, documentaries, and exhibitions. These include:</p>
+                <ul>
+                    <li>The Man Who Knew Infinity (2015): A biographical drama film about Ramanujan directed by Matthew Brown, starring Dev Patel as Ramanujan.[1]</li>
+                    <li>The Man Who Counted (2015): A documentary film directed by Joshua Z. Cohen.[1]</li>
+                    <li>The Mystery of Ramanujan's Mathematics (2017): A documentary film by Discovery Channel and HMV Entertainment, presented by mathematics professor Bill Gosper.[1]</li>
+                    <li>The Life and Times of Srinivasa Ramanujan (2016): An exhibit at the Science Gallery London.[1]</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About the Project:</h1><br>
+        <p>This project aims to explore the life and contributions of Srinivasa Ramanujan, a 20th-century Indian mathematician who made significant contributions to the fields of number theory, complex analysis, and fluid dynamics. Despite being born into a humble family and suffering from extreme poverty, Ramanujan is known for his prodigious mathematical abilities and unconventional approach to problem-solving. The project presents an overview of Ramanujan's life, accomplishments, and recognition by various organizations and institutions. It also includes information about government honors, popular culture, and resources for further reading.</p>
+    </section>
+<br>
+<br>
+    <section id="references">
+        <h1>References:</h1><br>
+        <ol>
+            <li>Narayanan, Gopalakrishnan (2012). The Man Who Knew Infinity: A Biography of the Genius Ramanujan. Warner Books. ISBN 978-0099522763.</li>
+            <li>Singh, Gaurav (2019). Ramanujan: Life, Math and Srimath Salgorithms. World Scientific. ISBN 978-9811069325.</li>
+            <li>Shanks, Edward (1934). The Man Who Counted: The Story of Ramanujan. L. E. Watkins.</li>
+            <li>The Indian Mathematical Society (1979). Indian Mathematics 1800-1978: A Commemorative Volume. The Indian Mathematical Society. ISBN 0946208025.</li>
+        </ol>
+        <p>For more information, visit <a href="https://en.wikipedia.org/wiki/Srinivasa_Ramanujan">Wikipedia</a>.</p>
+    </section>
+</body>
+</html>
